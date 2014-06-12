@@ -59,6 +59,10 @@
 		0A31F3DD194994DA0066C667 /* BouncerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BouncerTests.m; sourceTree = "<group>"; };
 		0A31F3E71949A24C0066C667 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		0A31F42D1949EB0E0066C667 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		0ADF65B01949F57200F732A0 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main_iPhone.strings; sourceTree = "<group>"; };
+		0ADF65B11949F57200F732A0 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main_iPad.strings; sourceTree = "<group>"; };
+		0ADF65B21949F57200F732A0 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0ADF65B31949F57200F732A0 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +226,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = 0A31F3A3194994D90066C667;
 			productRefGroup = 0A31F3AD194994D90066C667 /* Products */;
@@ -291,6 +296,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				0A31F3B9194994D90066C667 /* en */,
+				0ADF65B21949F57200F732A0 /* fr */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -299,6 +305,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				0A31F3C2194994D90066C667 /* Base */,
+				0ADF65B01949F57200F732A0 /* fr */,
 			);
 			name = Main_iPhone.storyboard;
 			sourceTree = "<group>";
@@ -307,6 +314,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				0A31F3C5194994D90066C667 /* Base */,
+				0ADF65B11949F57200F732A0 /* fr */,
 			);
 			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
@@ -315,6 +323,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				0A31F3DB194994DA0066C667 /* en */,
+				0ADF65B31949F57200F732A0 /* fr */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -479,6 +488,7 @@
 				0A31F3E3194994DA0066C667 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A31F3E4194994DA0066C667 /* Build configuration list for PBXNativeTarget "BouncerTests" */ = {
 			isa = XCConfigurationList;
@@ -487,6 +497,7 @@
 				0A31F3E6194994DA0066C667 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
