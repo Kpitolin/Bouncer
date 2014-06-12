@@ -23,6 +23,7 @@
 		0A31F3DC194994DA0066C667 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A31F3DA194994DA0066C667 /* InfoPlist.strings */; };
 		0A31F3DE194994DA0066C667 /* BouncerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31F3DD194994DA0066C667 /* BouncerTests.m */; };
 		0A31F3E81949A24C0066C667 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A31F3E71949A24C0066C667 /* CoreMotion.framework */; };
+		0A31F42E1949EB0E0066C667 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A31F42D1949EB0E0066C667 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		0A31F3DB194994DA0066C667 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0A31F3DD194994DA0066C667 /* BouncerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BouncerTests.m; sourceTree = "<group>"; };
 		0A31F3E71949A24C0066C667 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		0A31F42D1949EB0E0066C667 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				0A31F3BF194994D90066C667 /* BouncerAppDelegate.m */,
 				0A31F3C7194994D90066C667 /* BouncerViewController.h */,
 				0A31F3C8194994D90066C667 /* BouncerViewController.m */,
+				0A31F42D1949EB0E0066C667 /* Settings.bundle */,
 				0A31F3CA194994D90066C667 /* Images.xcassets */,
 				0A31F3B6194994D90066C667 /* Supporting Files */,
 			);
@@ -238,6 +241,7 @@
 			files = (
 				0A31F3C6194994D90066C667 /* Main_iPad.storyboard in Resources */,
 				0A31F3CB194994D90066C667 /* Images.xcassets in Resources */,
+				0A31F42E1949EB0E0066C667 /* Settings.bundle in Resources */,
 				0A31F3C3194994D90066C667 /* Main_iPhone.storyboard in Resources */,
 				0A31F3BA194994D90066C667 /* InfoPlist.strings in Resources */,
 			);

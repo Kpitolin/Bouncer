@@ -56,6 +56,16 @@
                                                   usingBlock:^(NSNotification * note){
                                                       [self resumeGame];
                                                   }];
+    
+    [[NSNotificationCenter defaultCenter] addObserverForName:NSUserDefaultsDidChangeNotification
+                                                      object:nil
+                                                       queue:nil
+                                                  usingBlock:^(NSNotification * note){
+                                                      [self resetElasticity];
+                                                  }];
+    
+    
+    
 }
 
 -(void) viewWillDisappear:(BOOL)animated
@@ -233,6 +243,7 @@ static CGSize SQUARE_DIMENSIONS  = {40,40};
         elastic.elasticity = 1.0;
         [self.animator addBehavior:elastic];
         self.elastic  = elastic;
+        [self resetElasticity];
     }
     return _elastic;
 }
@@ -245,6 +256,18 @@ static CGSize SQUARE_DIMENSIONS  = {40,40};
     }
     
     return _quicksand ;
+}
+
+-(void) resetElasticity
+{
+    
+    NSNumber *elasticity  = [[NSUserDefaults standardUserDefaults] valueForKey:@"Settings_elasticity"];
+    if (elasticity) {
+        self.elastic.elasticity = [elasticity floatValue];
+    }else{
+        self.elastic.elasticity = 1.0;
+    }
+    
 }
 #pragma mark - Scorekeeping
 
