@@ -22,6 +22,7 @@
 		0A31F3D4194994DA0066C667 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A31F3B3194994D90066C667 /* UIKit.framework */; };
 		0A31F3DC194994DA0066C667 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A31F3DA194994DA0066C667 /* InfoPlist.strings */; };
 		0A31F3DE194994DA0066C667 /* BouncerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31F3DD194994DA0066C667 /* BouncerTests.m */; };
+		0A31F3E81949A24C0066C667 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A31F3E71949A24C0066C667 /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		0A31F3D9194994DA0066C667 /* BouncerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BouncerTests-Info.plist"; sourceTree = "<group>"; };
 		0A31F3DB194994DA0066C667 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0A31F3DD194994DA0066C667 /* BouncerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BouncerTests.m; sourceTree = "<group>"; };
+		0A31F3E71949A24C0066C667 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A31F3E81949A24C0066C667 /* CoreMotion.framework in Frameworks */,
 				0A31F3B2194994D90066C667 /* CoreGraphics.framework in Frameworks */,
 				0A31F3B4194994D90066C667 /* UIKit.framework in Frameworks */,
 				0A31F3B0194994D90066C667 /* Foundation.framework in Frameworks */,
@@ -103,6 +106,7 @@
 		0A31F3AE194994D90066C667 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0A31F3E71949A24C0066C667 /* CoreMotion.framework */,
 				0A31F3AF194994D90066C667 /* Foundation.framework */,
 				0A31F3B1194994D90066C667 /* CoreGraphics.framework */,
 				0A31F3B3194994D90066C667 /* UIKit.framework */,
@@ -116,8 +120,6 @@
 			children = (
 				0A31F3BE194994D90066C667 /* BouncerAppDelegate.h */,
 				0A31F3BF194994D90066C667 /* BouncerAppDelegate.m */,
-				0A31F3C1194994D90066C667 /* Main_iPhone.storyboard */,
-				0A31F3C4194994D90066C667 /* Main_iPad.storyboard */,
 				0A31F3C7194994D90066C667 /* BouncerViewController.h */,
 				0A31F3C8194994D90066C667 /* BouncerViewController.m */,
 				0A31F3CA194994D90066C667 /* Images.xcassets */,
@@ -129,6 +131,8 @@
 		0A31F3B6194994D90066C667 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0A31F3C1194994D90066C667 /* Main_iPhone.storyboard */,
+				0A31F3C4194994D90066C667 /* Main_iPad.storyboard */,
 				0A31F3B7194994D90066C667 /* Bouncer-Info.plist */,
 				0A31F3B8194994D90066C667 /* InfoPlist.strings */,
 				0A31F3BB194994D90066C667 /* main.m */,
