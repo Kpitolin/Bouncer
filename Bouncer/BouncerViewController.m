@@ -52,8 +52,35 @@ static CGSize SQUARE_DIMENSIONS  = {40,40};
     [self.gravity addItem:self.redBlock ];
     
     if ([self.motionManager isAccelerometerAvailable]) {
-        if([self.motionManager isAccelerometerActive]){
+        if(!self.motionManager.isAccelerometerActive){
             
+            [self.motionManager startAccelerometerUpdatesToQueue:[NSOperationQueue mainQueue] withHandler:^(CMAccelerometerData *accelerometerData, NSError *error) {
+                CGFloat x = accelerometerData.acceleration.x;
+                CGFloat y = accelerometerData.acceleration.y;
+                switch (self.interfaceOrientation) {
+                    case UIInterfaceOrientationLandscapeRight:
+                        self.gravity.gravityDirection = CGVectorMake(-x, -y);
+
+                        break;
+                    case UIInterfaceOrientationLandscapeLeft:
+                        self.gravity.gravityDirection = CGVectorMake(y, x);
+                        
+                        break;
+                    case UIInterfaceOrientationPortrait:
+                        self.gravity.gravityDirection = CGVectorMake(x, -y);
+                        
+                        break;
+
+                    case UIInterfaceOrientationPortraitUpsideDown:
+                        self.gravity.gravityDirection = CGVectorMake(-x, y);
+                        
+                        break;
+
+                    default:
+                        break;
+                }
+
+            }];
         }
     }else
     {
